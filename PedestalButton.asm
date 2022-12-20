@@ -23,8 +23,8 @@
  !GFXPage = 1				;>0 = Page 0, 1 = page 1 (don't use any other values).
  !PressedTimer = 15			;>How many frames the button remains pressed before popping out (1 second is 60 frames) (use only $01-$FF).
  
- !Button_NotPressedOffset = $03		;>Y position (relative to sprite's origin) of button cap when not pressed
- !Button_PressedOffset = $05		;>Y position (relative to sprite's origin) of button cap when pressed
+ !Button_NotPressedOffset = $04		;>Y position (relative to sprite's origin) of button cap when not pressed
+ !Button_PressedOffset = $06		;>Y position (relative to sprite's origin) of button cap when pressed
  
 ;Sound effects, see https://www.smwcentral.net/?p=viewthread&t=6665
  !SFX_SoundNumb = $0B		;>Sound effect number
