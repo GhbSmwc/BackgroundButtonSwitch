@@ -15,6 +15,8 @@
 ; $0A = Palette 5 (LM row number $0D)
 ; $0C = Palette 6 (LM row number $0E)
 ; $0E = Palette 7 (LM row number $0F)
+;extra_byte_3: Not used but you can use this as a Lunar Magic-configured value
+; to reuse this sprite for different switch action.
 
 ;Settings
  !Tile_ButtonCap = $02			;>tile to display the button (note: this tile moves up and down to display non-pressed and pressed states)
@@ -104,7 +106,7 @@ Pressible:
 			;ADC #$04		;|
 			STA $04			;|
 			LDA !14E0,x		;|
-			ADC #$00		;|
+			;ADC #$00		;|
 			STA $0A			;/
 			LDA !D8,x		;\Y position
 			CLC			;|
